@@ -1,10 +1,10 @@
 # setup_your_server
 
-This code can help you fast setup a linux server for deep learning, for example, an AWS machine.
+This guide will assist you in quickly setting up a Linux server for deep learning tasks.
 
-Think about you got a new server (for exampl, a AWS machine) and you want to run deep learning experiments. You will first need to install cuda and create an anaconda enviroment. This script will help you make things easier! Just follow the command and you will settle up!
+Suppose you have a new server (for instance, an AWS machine) and you aim to run deep learning experiments. The first steps involve installing CUDA and setting up an Anaconda environment. This script simplifies the process! Just follow the commands provided, and you'll be ready to go.
 
-Execute the following commands in your terminal line by line.
+Execute the following commands in your terminal, one line at a time.
 
 ## Step 1: Install NVIDIA CUDA Drivers
 
@@ -37,7 +37,7 @@ conda init
 # re-open shell
 ```
 
-## Step 3: Create a Conda environment and install packages
+## Step 3: Create a Conda environment
 
 ```
 # Create a new Conda environment with Python 3.9
