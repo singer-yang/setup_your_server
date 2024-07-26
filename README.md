@@ -27,8 +27,8 @@ nvidia-smi
 
 ```
 # Using the latest installer for Linux (64-bit) as of the last update
-wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
-bash Anaconda3-2023.09-0-Linux-x86_64.sh -b
+wget https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
+bash Anaconda3-2024.06-1-Linux-x86_64.sh -b
 export PATH=~/anaconda3/bin:$PATH
 source ~/.bashrc
 conda update -n base -c defaults conda
@@ -41,12 +41,12 @@ conda init
 
 ```
 # Create a new Conda environment with Python 3.9
-conda create -n diffgwg python=3.9 -y
-conda activate diffgwg
+conda create -n deeplearning python=3.9 -y
+conda activate deeplearning
 
 # Install PyTorch with CUDA support
-conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
-pip install tqdm opencv-python matplotlib h5py wandb
+conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia
+pip install tqdm opencv-python matplotlib h5py wandb lpips scikit-image
 
 # Verify PyTorch installation
 python -c "import torch; print(torch.cuda.is_available())"
